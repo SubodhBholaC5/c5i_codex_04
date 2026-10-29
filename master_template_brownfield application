@@ -1,0 +1,115 @@
+You are a senior software engineer and you are analysing an existing, complex brownfield application:
+
+Your task is to reverse engineer the repository and produce a comprehensive, evidence-based architecture and code dependency map.
+
+IMPORTANT: This is a READ-ONLY discovery exercise. Do not modify application code, dependencies, configuration or existing documentation
+
+
+Phase1: Repository Discovery
+
+1. Identify Programming language, framework and architectural patterns
+2. Map the directory structure and explain the responsibility of each major folder
+3. Identify application entry points, configuration files and environment variables.
+4. Identify services, modules, shared libraries, database integration, external APIs and background jobs
+5. Distinguish confirmed findings from assumptions.
+
+Phase2: Function and Argument mapping
+
+For each significant application function, method, class or API handler, identify:
+
+1. Function name and source file path
+2. Purpose and business responsibility
+3. Input arguments, data types, default services and optional parameters
+4. Internal functions called
+5. Caller of the function
+6. External dependencies 
+7. Return types and outputs
+8. Exceptions and error-handling behaviour
+9. Side effects, including database writes, network calls and state changes
+
+Present findings in structured tables
+
+
+Phase 3: Dependency analysis
+
+Create a dependency map covering:
+
+1. Modul to module dependencies
+2. Function-level caller/callee relationships
+3. Third party libraries and versions
+4. API-to-service-database relationship
+5. Circular dependency and tightly coupled components 
+
+Distinguish direct dependencies from transitive dependencies 
+
+Phase 4: Execution flow
+
+Identify the most important user facing and background workflows:
+
+For each workflow explain:
+
+1. Trigger or entry point
+2. Execution sequence
+3. Functions invoked and in what order
+4. Arguments passed between functions
+5. Data transformations
+6. Database or external API interactions
+7. Final outputs and error paths
+Create a mermaid sequence diagram and flowcharts
+
+Phase 5: Change Impact Analysis
+
+Identify:
+
+1. High dependency functions and modules
+2. Potential breaking-change risks
+3. Areas with weak test coverage
+4. Legacy or deprecated dependencies
+5. Architectural bottleness, technical debt and single point of failure
+
+For important functions, explain the potential impact of changing there behaviour  or return type
+
+Phase 6: Documentation generation
+
+
+Create the following files under docs/repository-analysis/:
+
+1. 01-architecture-overview.md
+2. 02-module-dependency.md
+3. 03-function-inventory.md
+4. 04-function-call-graph.md
+5. 05-api-and-data-contracts.md
+6. 06-execution-flow.md
+7. 07-change-impact-analysis.md
+8. 08-unknowns-and-validations.md
+
+Use mermaid diagram wherever useful
+
+Analysis Rules:
+
+1. Inspect actual repository code rather than replying only on README files.
+2. Use static analysis and existing tooling where practical
+3. Include file paths and line number as evidence
+4. Do not invent relationships or functions
+5. Avoid exposing secrets or any other sensitive environment variables
+6. Do not install packages or execute application code without approval
+7. For large repository, analyse incrementally by module
+8. Prioritise business critical workflows over trivial utility functions
+9. Keep documentation concise, navigable and cross-referenced
+
+
+Final Deliverable
+
+Provide:
+
+1. Executive architecture summary
+2. Repository module map
+3. Function and argument inventory
+4. Dependency graph
+5. Top five critical execution flows
+6. Top ten change-risk hotspots
+7. Unknown requiring runtime verification
+8. Update documentation only with verified information
+9. Clearly state if any assumptions made or any unknowns are there
+
+Start by producing a repository inventory and phased analysis plan . Then proceed module by module, updating the documentation as findings are verified
