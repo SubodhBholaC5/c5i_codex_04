@@ -1,5 +1,7 @@
 # Module dependency map
 
+> Archived pre-refactor discovery snapshot at `d6581c9770db2cd48fc022bb41800d15d58cca2d`. Findings, test-execution status and source line references below describe that revision, not the current working tree. For the final shared-helper architecture and runtime evidence, see [current flow report](../../flow_diagram.md) and [guarded refactor](../../guarded_refactor.md).
+
 [Overview](01-architecture-overview.md) · [Call graph](04-function-call-graph.md) · [Impact](07-change-impact-analysis.md)
 
 Scope: all ten Python files under `learner/starter/booking_platform`. Source paths in the tables are relative to that application directory. Direct means an explicit import; transitive means reachable through such an import. Calls to built-ins are listed in the function inventory, not treated as third-party dependencies.

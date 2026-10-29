@@ -1,5 +1,7 @@
 # Function and argument inventory
 
+> Archived pre-refactor discovery snapshot at `d6581c9770db2cd48fc022bb41800d15d58cca2d`. Findings, test-execution status and source line references below describe that revision, not the current working tree. For the final shared-helper architecture and runtime evidence, see [current flow report](../../flow_diagram.md) and [guarded refactor](../../guarded_refactor.md).
+
 [Overview](01-architecture-overview.md) · [Call sites](04-function-call-graph.md) · [Data contracts](05-api-and-data-contracts.md)
 
 All six application functions and all four test classes/five test methods are inventoried below. No application classes or HTTP handlers are registered. None of the functions has type annotations or argument defaults. Types below describe supported intent inferred from arithmetic and fixtures, not enforced contracts. No injected/default services, keyword-only parameters, `*args`, or `**kwargs` occur.

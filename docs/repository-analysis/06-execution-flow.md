@@ -1,5 +1,7 @@
 # Execution flows
 
+> Archived pre-refactor discovery snapshot at `d6581c9770db2cd48fc022bb41800d15d58cca2d`. Findings, test-execution status and source line references below describe that revision, not the current working tree. For the final shared-helper architecture and runtime evidence, see [current flow report](../../flow_diagram.md) and [guarded refactor](../../guarded_refactor.md).
+
 [Contracts](05-api-and-data-contracts.md) · [Call graph](04-function-call-graph.md) · [Unknowns](08-unknowns-and-validations.md)
 
 There are four distinct application entry paths. To provide five useful flows without inventing a background job, flow 5 describes the existing baseline test workflow. The user-facing nature of quote/invoice is documented intent; no HTTP dispatch or actual users are present in code. No background workflow was found.

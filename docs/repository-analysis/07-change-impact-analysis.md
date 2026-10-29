@@ -1,5 +1,7 @@
 # Change impact analysis
 
+> Archived pre-refactor discovery snapshot at `d6581c9770db2cd48fc022bb41800d15d58cca2d`. Findings, test-execution status and source line references below describe that revision, not the current working tree. For the final shared-helper architecture and runtime evidence, see [current flow report](../../flow_diagram.md) and [guarded refactor](../../guarded_refactor.md).
+
 [Overview](01-architecture-overview.md) · [Function inventory](03-function-inventory.md) · [Validation backlog](08-unknowns-and-validations.md)
 
 Priorities below reflect static business impact and known callers, not production incident data or measured performance. No fixes are applied. The ten rows describe distinct change concerns in this small application; they are not ten separate high-fan-in modules.

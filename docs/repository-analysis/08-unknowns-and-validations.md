@@ -1,5 +1,7 @@
 # Unknowns and validation record
 
+> Archived pre-refactor discovery snapshot at `d6581c9770db2cd48fc022bb41800d15d58cca2d`. Findings, test-execution status and source line references below describe that revision, not the current working tree. For the final shared-helper architecture and runtime evidence, see [current flow report](../../flow_diagram.md) and [guarded refactor](../../guarded_refactor.md).
+
 [Overview / inventory](01-architecture-overview.md) · [Risks](07-change-impact-analysis.md) · [Contracts](05-api-and-data-contracts.md)
 
 ## Scope and evidence discipline
